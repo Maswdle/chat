@@ -30,18 +30,23 @@ function enter_a_click() {
         userID = "";
         return;
     }
-    axios.post(
-        'http://v1.nmcp.cn:668/asmx/method.asmx/randomVIPGetHistoryUserList_Random',
+    axios(
+        //todo 伪造Referer
         {
-            myUserID: userID,
-            vipcode: "",
-            severPort: "1001"
-        },{
-            headers:{
-                "Referer": "http://v2.ozvzzs.cn/randomdeskrynewafwekb.html?v=afwekb"
+            headers: {
+                'Referer': 'http://v2.ozvzzs.cn/randomdeskrynewafwekb.html?v=afwekb'
+            },
+            method: 'post',
+            url: 'http://v1.nmcp.cn:668/asmx/method.asmx/randomVIPGetHistoryUserList_Random',
+            data:
+            {
+                myUserID: userID,
+                vipcode: "",
+                severPort: "1001"
             }
+
         }
-        
+
     )
         .then((result) => {
             var obj = document.getElementById("select1");
@@ -53,5 +58,5 @@ function enter_a_click() {
 }
 
 function enter_b_click() {
-    alert("b");
+    
 }
