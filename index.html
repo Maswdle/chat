@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>Force</title>
+</head>
+<style>
+    button {
+        background-color: #FF9966;
+        color: white;
+        width: 60px;
+        height: 30px;
+        border: 0;
+        font-size: 16px;
+        box-sizing: content-box;
+        border-radius: 5px;
+        text-align: center;
+
+    }
+
+    button:hover {
+        background-color: #a54b4a;
+    }
+
+    input {
+        border: 1px solid #ccc;
+        padding: 7px 0px;
+        border-radius: 3px;
+        padding-left: 5px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+    }
+
+    input:focus {
+        border-color: #66afe9;
+        outline: 0;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6)
+    }
+
+    .filter-box {
+        width: 240px;
+        height: 34px;
+        background-color: #ffffff;
+        border: solid 1px #dcdcdc;
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        padding-left: 10px;
+        border-color: #dcdcdc;
+        -webkit-appearance: none;
+    }
+
+    select {
+        background-image: url(backdropdown.png);
+        background-position: 222px 9px;
+        font-family: Roboto;
+        font-size: 12px;
+        color: #3d3d3d;
+        background-repeat: no-repeat;
+    }
+
+    .shortselect {
+        background: #fafdfe;
+        height: 28px;
+        width: 180px;
+        line-height: 28px;
+        border: 1px solid #9bc0dd;
+        -moz-border-radius: 2px;
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+    }
+</style>
+
+<body style="background-color:cornsilk">
+    <h1 align="center">1</h1>
+    <br>
+    <p align="center">1</p>
+    <div align="center"><input id="id_input"></input></div>
+    <br>
+    <center><button id="enter_a">1</button></center>
+    <br>
+    <form align="center">
+        <select class="shortselect" id="select1">
+            <option>如果你看到我,请点击上面按钮</option>
+        </select>
+    </form>
+    <br>
+    <center><button id="enter_b">1</button></center>
+</body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="./main.js"></script>
+
+</html>
